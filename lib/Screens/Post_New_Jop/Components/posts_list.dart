@@ -14,6 +14,7 @@ class PostsList extends StatelessWidget {
       ),
       child: ListView.separated(
         itemCount: 3,
+        padding: EdgeInsets.all(0),
         itemBuilder: (context, index) {
           return PostItem();
         },

@@ -5,6 +5,8 @@ import 'package:tanta_task_app/Screens/Post_New_Jop/Components/posts_list.dart';
 import 'Components/search_section.dart';
 
 class PostNewJopScreen extends StatelessWidget {
+  static String routeName = "/PostNewjop";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

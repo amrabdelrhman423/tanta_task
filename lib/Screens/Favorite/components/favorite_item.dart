@@ -19,22 +19,48 @@ class FavoriteItem extends StatelessWidget {
                       borderRadius: BorderRadius.circular(90), color: cWhite),
                   child: Center(child: Image.asset("assets/profileP.png")),
                 ),
+                SizedBox(
+                  width: 6,
+                ),
                 Expanded(
-                  child: ListTile(
-                    title: Text(
-                      "Ahmed Hossam",
-                      style: TextStyle(fontSize: 17),
-                    ),
-                    subtitle: Text(
-                      "Real Estate Developer",
-                      style: TextStyle(fontSize: 12, color: Colors.black),
-                    ),
-                    trailing: Text(
-                      "Doha, Qatar",
-                      style: TextStyle(color: cFavLocation),
-                    ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Ahmed Hossam",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        "Real Estate Developer",
+                        style: TextStyle(fontSize: 13, color: Colors.black),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 18),
+                        child: Text(
+                          "Doha, Qatar",
+                          style: TextStyle(color: cFavLocation),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
+
+                // ListTile(
+                //   title: Text(
+                //     "Ahmed Hossam",
+                //     style: TextStyle(fontSize: 17),
+                //   ),
+                //   subtitle: Text(
+                //     "Real Estate Developer",
+                //     style: TextStyle(fontSize: 12, color: Colors.black),
+                //   ),
+                //   trailing: Text(
+                //     "Doha, Qatar",
+                //     style: TextStyle(color: cFavLocation),
+                //   ),
+                // ),
+
                 // Column(
                 //   mainAxisAlignment: MainAxisAlignment.end,
                 //   children: [

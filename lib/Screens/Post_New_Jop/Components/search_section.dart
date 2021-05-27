@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tanta_task_app/Screens/Favorite/favorite.dart';
 
 import '../../../consts.dart';
 import '../../../size_config.dart';
@@ -11,18 +12,21 @@ class SearchSection extends StatelessWidget {
       height: getProportionateScreenHeight(context, 10),
       child: Row(children: [
         buildSearchField(context),
-        Container(
-          width: getProportionateScreenWidth(context, 10),
-          height: 40,
-          padding: EdgeInsets.all(3),
-          decoration: BoxDecoration(
-            color: cGreen,
-            borderRadius: BorderRadius.circular(90),
-          ),
-          child: Center(
-            child: Icon(
-              Icons.star,
-              color: cWhite,
+        GestureDetector(
+          onTap: () => Navigator.pushNamed(context, FavoriteScreen.routeName),
+          child: Container(
+            width: getProportionateScreenWidth(context, 10),
+            height: 40,
+            padding: EdgeInsets.all(3),
+            decoration: BoxDecoration(
+              color: cGreen,
+              borderRadius: BorderRadius.circular(90),
+            ),
+            child: Center(
+              child: Icon(
+                Icons.star,
+                color: cWhite,
+              ),
             ),
           ),
         )
@@ -38,7 +42,7 @@ class SearchSection extends StatelessWidget {
       padding: EdgeInsets.all(5.0),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(15.0)),
-      child: TextField(
+      child: TextFormField(
         decoration: InputDecoration(
           hintText: "Search For Jobs",
           border: InputBorder.none,

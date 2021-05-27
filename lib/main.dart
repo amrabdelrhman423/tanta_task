@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tanta_task_app/Screens/History/history.dart';
+import 'package:tanta_task_app/Screens/Messages/messages.dart';
+import 'package:tanta_task_app/Screens/Notifications/notifications.dart';
+import 'package:tanta_task_app/routes.dart';
 import 'Screens/Home/homepage.dart';
 
 void main() {
@@ -14,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      initialRoute: HomeScreen.routeName,
+      routes: routes,
     );
   }
 }

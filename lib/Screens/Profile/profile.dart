@@ -4,6 +4,8 @@ import 'Components/Profile_list.dart';
 import 'Components/profile_details.dart';
 
 class ProfileScreen extends StatelessWidget {
+  static String routeName = "/profile";
+
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -8,6 +8,8 @@ import 'components/account_option.dart';
 import 'components/settings_profile_details.dart';
 
 class SettingsScreen extends StatefulWidget {
+  static String routeName = "/settings";
+
   @override
   _SettingsScreenState createState() => _SettingsScreenState();
 }
@@ -49,14 +51,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 buildNotificationOptionRow(
                     "Push notifications", Icons.notifications),
                 SizedBox(
-                  height: getProportionateScreenHeight(context, 5),
+                  height: getProportionateScreenHeight(context, 2),
                 ),
                 Divider(
                   height: 10,
                   thickness: 2,
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 5,
                 ),
                 buildAccountOptionRow(context, "Payment", Icons.payments),
                 buildAccountOptionRow(context, "About us", Icons.priority_high),

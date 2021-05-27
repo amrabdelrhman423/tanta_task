@@ -29,6 +29,7 @@ class ProfileList extends StatelessWidget {
               margin: EdgeInsets.all(13),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: cBorderProfile),
                 color: cGraytextfield,
               ),
               child: Row(

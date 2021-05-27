@@ -58,7 +58,6 @@ class ProfileDetails extends StatelessWidget {
             width: double.infinity,
             margin: EdgeInsets.symmetric(horizontal: 15),
             padding: EdgeInsets.symmetric(vertical: 8),
-            height: getProportionateScreenHeight(context, 9),
             decoration: BoxDecoration(
                 color: cWhite, borderRadius: BorderRadius.circular(10)),
             child: Row(

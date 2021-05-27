@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tanta_task_app/Screens/Favorite/components/favourite_list.dart';
+import 'package:tanta_task_app/Screens/History/components/post_history_list.dart';
 import 'package:tanta_task_app/components/customappbar.dart';
 
-class FavoriteScreen extends StatelessWidget {
-  static String routeName = "/fav";
+class HistoryScreen extends StatelessWidget {
+  static String routeName = "/history";
 
   @override
   Widget build(BuildContext context) {
@@ -11,10 +11,9 @@ class FavoriteScreen extends StatelessWidget {
       body: Column(
         children: [
           CustomAppBar(
-            title: "Favorite",
-            back: true,
+            title: "History",
           ),
-          Expanded(child: FavoritList())
+          Expanded(child: PostHistoryList())
         ],
       ),
     );

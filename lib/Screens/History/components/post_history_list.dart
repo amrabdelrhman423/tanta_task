@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 import '../../../consts.dart';
-import 'favorite_item.dart';
+import 'post_history_item.dart';
 
-class FavoritList extends StatelessWidget {
+class PostHistoryList extends StatefulWidget {
+  @override
+  _PostHistoryListState createState() => _PostHistoryListState();
+}
+
+class _PostHistoryListState extends State<PostHistoryList> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,7 +21,7 @@ class FavoritList extends StatelessWidget {
         itemCount: 3,
         padding: EdgeInsets.all(0),
         itemBuilder: (context, index) {
-          return FavoriteItem();
+          return PostHistoryItem();
         },
         separatorBuilder: (context, index) => Padding(
           padding: const EdgeInsetsDirectional.only(start: 20.0, end: 20.0),
