@@ -32,3 +32,5 @@ const Color nasty_green = Color.fromRGBO(110, 185, 67, 1);
 const Color aqua_marine = Color.fromRGBO(78, 210, 219, 1);
 const Color dull_yellow = Color.fromRGBO(235, 191, 80, 1);
 const Color dark_peach = Color.fromRGBO(226, 117, 117, 1);
+const Color pale_grey = Color.fromRGBO(242, 247, 249, 1);
+const Color light_blue_grey = Color.fromRGBO(218, 228, 237, 1);

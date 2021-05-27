@@ -1,0 +1,1 @@
+enum FilterState { equipment, manPower }

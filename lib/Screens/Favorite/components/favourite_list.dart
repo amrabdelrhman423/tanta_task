@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tanta_task_app/Screens/ManpowerProfile/manpower_profile.dart';
 
 import '../../../consts.dart';
 import 'favorite_item.dart';
@@ -16,7 +17,11 @@ class FavoritList extends StatelessWidget {
         itemCount: 3,
         padding: EdgeInsets.all(0),
         itemBuilder: (context, index) {
-          return FavoriteItem();
+          return GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, ManPowerProfile.routeName);
+              },
+              child: FavoriteItem());
         },
         separatorBuilder: (context, index) => Padding(
           padding: const EdgeInsetsDirectional.only(start: 20.0, end: 20.0),

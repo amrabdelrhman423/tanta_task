@@ -8,12 +8,17 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        CustomAppBar(title: "Profile"),
-        ProfileDetails(),
-        Expanded(child: ProfileList()),
-      ],
+    return Scaffold(
+      body: Column(
+        children: [
+          CustomAppBar(
+            title: "Profile",
+            back: true,
+          ),
+          ProfileDetails(),
+          Expanded(child: ProfileList()),
+        ],
+      ),
     );
   }
 }

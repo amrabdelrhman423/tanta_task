@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tanta_task_app/Screens/ManpowerProfile/manpower_profile.dart';
+import 'package:tanta_task_app/Screens/Profile/profile.dart';
 
 import '../../../consts.dart';
 import '../../../size_config.dart';
@@ -16,7 +17,7 @@ class SettingsProfileDetails extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () =>
-                    Navigator.pushNamed(context, ManPowerProfile.routeName),
+                    Navigator.pushNamed(context, ProfileScreen.routeName),
                 child: Container(
                   padding: EdgeInsets.all(10),
                   width: getProportionateScreenWidth(context, 13),

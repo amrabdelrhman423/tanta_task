@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:tanta_task_app/components/build_details.dart';
 
 import '../../../consts.dart';
-import '../../../size_config.dart';
 
 class ProfileDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       color: kbackgroundcolor,
-      height: getProportionateScreenHeight(context, 22),
+      padding: EdgeInsets.only(bottom: 20),
       child: Column(
         children: [
           Padding(
